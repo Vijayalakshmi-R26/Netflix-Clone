@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: white;
+
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position:relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 500px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: red;
+    color: white;
+    padding: 30px;
+    font-size: 40px;
+    border-radius: 4px;
+    margin-left: 60px;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+        
+
+}
+.language-btn{
+     display: inline-flex;
+     align-items: center;
+     background: transparent;
+     border: 1px solid white;
+     padding: 7px 10px;
+
+}
+ .language-btn img{ 
+    width: 10px;
+    margin-left: 2px;
+    
+    
+ }
+ .header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+.email-signup{
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    overflow: hidden;
+    
+    
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    padding: 25px;
+    font-size: 50px;
+
+
+}
+.email-signup button{
+    background: red;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 25px;
+    padding: 15px 30px;
+
+    
+}
+.slider{
+    height: 900px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+.slide-track{
+    display: flex;
+    width: calc(500 * 50);
+    
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    margin: 180px;
+    justify-content: space-between;
+}
+    
+
+    
+img:hover{
+    transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after{
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+.slider::before{
+    left: 0;
+    top: 0;
+}
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(100deg);
+}
+.faq{
+    align-content: center;
+}
+h2{
+    font-size: 100px;
+}
+.accordion{
+    margin:60px auto;
+    width:100%;
+    max-width: 750px;
+    
+
+}
+
+.accordion li{
+    list-style: none;
+    width: 200%;
+    padding: 5px;
+    text-align: center;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    height: 100px;
+    
+    
+}
+label::after{
+    content: '+';
+    font-size: 50px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    font-size: 35px;
+}
+.accordion input[type="radio"]:checked+label+ .content{
+    max-height:600px;
+    padding:30px 20px;
+}
+.accordion input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
+
+
+h1{
+    text-align: center;
+}
+.email-vg{
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    overflow: hidden;
+    height: 100px;
+    width: 40%;
+    margin-left: 1200px;
+    
+}
+.email-vg input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    padding: 25px;
+    font-size: 50px;
+
+
+}
+.email-vg button{
+    background: red;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 25px;
+    padding: 15px 30px;
+}
+
+.footer{
+    padding: 50px 15%;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.boxbox1{
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 15%;
+    font-size: 30px;
+    padding: 20px;
+    padding-bottom: 20px;
+    line-height: 60px;
+    color: #777;
+    text-decoration: underline;
+    top: 4550px;
+}
+.boxbox2{
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 32%;
+    top: 4550px;
+    font-size: 30px;
+    padding: 20px;
+    line-height: 60px;
+    color: #777;
+    text-decoration: underline;
+    
+}
+.boxbox3{
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 49%;
+    top: 4550px;
+    font-size: 30px;
+    padding: 20px;
+    line-height: 60px;
+    color: #777;
+    text-decoration: underline;
+}
+.boxbox4{
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 66%;
+    top: 4550px;
+    font-size: 30px;
+    padding: 20px;
+    line-height: 60px;
+    color: #777;
+    text-decoration: underline;
+}
+
+.boxbox1 li:hover{
+    color: blue;
+    text-decoration: underline;
+    
+    cursor: pointer;
+}
+.boxbox2 li:hover{
+    color: blue;
+    text-decoration: underline;
+    
+    cursor: pointer;
+}
+.boxbox3 li:hover{
+    color: blue;
+    text-decoration: underline;
+   
+    cursor: pointer;
+}
+.boxbox4 li:hover{
+    color: blue;
+    text-decoration: underline;
+    
+    cursor: pointer;
+}
+.boxbox5{
+    height: 300px;
+    width: 300px;
+    border: 4px solid black;
+    position: absolute;
+    left: 600px;
+    top:5000px;
+}
+.boxbox5 button{
+    height: 60px;
+    width: 150px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+}
+.boxbox5 p{
+    font-size: 30px;
+    color: #777;
+}
